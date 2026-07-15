@@ -2,105 +2,184 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>eirGate Privacy Policy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>eirGate Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #0b1412;
+      --panel: #ffffff;
+      --text: #17201d;
+      --muted: #5b6b65;
+      --brand: #109b61;
+      --line: #d9e3df;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.58;
+    }
+    header {
+      background: linear-gradient(135deg, #07110f, #0c3b29);
+      color: white;
+      padding: 44px 24px;
+      border-bottom: 4px solid var(--brand);
+    }
+    header .wrap, main {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 2.25rem;
+      letter-spacing: -0.02em;
+    }
+    .effective {
+      color: #c8e6d8;
+      margin: 0;
+      font-size: 1rem;
+    }
+    main {
+      background: var(--panel);
+      padding: 34px 34px 48px 34px;
+      box-shadow: 0 14px 45px rgba(0,0,0,0.22);
+      min-height: 80vh;
+    }
+    h2 {
+      color: #0d5d3d;
+      margin-top: 34px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      font-size: 1.25rem;
+    }
+    h2:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+    ul {
+      margin: 8px 0 18px 24px;
+      padding: 0;
+    }
+    li {
+      margin: 4px 0;
+    }
+    .contact-box {
+      background: #eef8f3;
+      border-left: 4px solid var(--brand);
+      padding: 14px 16px;
+      margin: 18px 0;
+    }
+    .muted {
+      color: var(--muted);
+    }
+    footer {
+      max-width: 920px;
+      margin: 0 auto;
+      color: #b9ccc4;
+      padding: 18px 34px 40px;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #0b7649;
+    }
+    @media (max-width: 700px) {
+      main {
+        padding: 24px 20px 38px 20px;
+      }
+      h1 {
+        font-size: 1.85rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>eirGate Privacy Policy</h1>
-  <p>Effective date: [insert date]</p>
+  <header>
+    <div class="wrap">
+      <h1>eirGate Privacy Policy</h1>
+      <p class="effective">Effective date: 15 July 2026</p>
+    </div>
+  </header>
 
-  <p>Privacy Policy for eirGate
-Draft material for Google Play Console submission
-Effective date: 15th July 2026
-This Privacy Policy explains what information eirGate collects, why it is used, how it is protected, and how users may request access, correction or deletion of their information.
-1. Who we are
-eirGate is operated by:
-    • eirGate	
-    • 31B Ballinteer Park
-    • Ballinteer
-    • Dublin 16
-    • D16FT22
-    • Ireland
-    • Email: bassman59@gmail.com
-2. What eirGate does
-eirGate provides cloud-managed gate access, gate administration, user management, call-to-open access, device monitoring and related security features for authorised users and administrators.
-3. Information we collect
-Account and user information
-    • Name
-    • Email address, where provided
-    • Mobile phone number
-    • User role and permissions
-    • Company or gate assignment
-    • Login credentials or authentication data
-Gate access and event information
-    • Gate open commands
-    • Auxiliary relay commands
-    • Call-to-open attempts
-    • Access allowed / denied records
-    • Date, time, user identity and gate identity linked to access events
-App and device security information
-    • App install identifier
-    • App device identifier
-    • Phone-binding status where enabled
-    • Login/session information
-    • Security and audit events
-Gate hardware information
-    • Gate device ID
-    • SIM ICCID
-    • Modem IMEI
-    • Signal strength / RSSI
-    • Online/offline heartbeat status
-    • MQTT connection status
-    • GNSS location of the fixed gate device
-    • Input states and relay events
-    • ATECC608C secure module serial/status where fitted
-eirGate does not use the mobile app to track the user’s live personal location. Any GNSS location stored by eirGate relates to the fixed gate hardware module, not the phone user.
-4. Why we use this information
-    • Authenticate users
-    • Allow authorised users to open assigned gates
-    • Manage companies, gates, roles and permissions
-    • Record access and relay events for audit/security
-    • Support call-to-open using recognised caller phone numbers
-    • Show gate online/offline, signal, input and diagnostic status
-    • Detect faults and support escalation where configured
-    • Improve security and prevent unauthorised access
-    • Provide technical support
-    • Comply with legal, billing, security and operational requirements
-5. Call-to-open and telephony
-Where call-to-open is enabled, a user may call an eirGate-assigned telephone number. eirGate receives the caller phone number, checks whether that phone number is authorised for the gate, triggers the configured relay if allowed, and rejects the call. The caller number and call result may be logged for security and audit purposes.
-6. Phone binding
-Phone binding may be disabled, monitored, or enforced by an administrator. When enabled, eirGate may link a user account to an app installation or device identifier to reduce unauthorised use of credentials on another phone.
-7. Secure module authentication
-Where supported hardware is installed, eirGate may record secure module details such as the ATECC608C serial number, module status and verification events. This is used to help confirm that a gate module is genuine and authorised.
-8. Sharing of information
-eirGate does not sell user data.
-eirGate may use trusted service providers to operate the service, including hosting, database, telephony, payment, email or support providers. These providers process information only as needed to provide the eirGate service.
-Examples may include:
-    • Cloud hosting provider
-    • Database provider
-    • Twilio for call-to-open
-    • Stripe for billing/payment where used
-    • Email/support provider where used
-eirGate may also disclose information where required by law, regulation, court order, security investigation or to protect the rights and safety of users, companies or property.
-9. Security
-eirGate uses encrypted connections where available, including HTTPS/TLS between the app and backend services. Access to administrative functions is restricted by user role. Security logs may be retained to investigate misuse, faults or unauthorised access.
-10. Data retention
-eirGate keeps account, access and diagnostic records for as long as needed to provide the service, maintain security, support customers, comply with legal requirements and resolve disputes. Retention periods may vary depending on company policy, contract terms, security needs and legal obligations.
-11. User rights and deletion requests
-Depending on applicable law, users may request:
-    • Access to their personal data
-    • Correction of inaccurate information
-    • Deletion of personal data
-    • Restriction or objection to processing
-    • A copy of their personal data
-    • Withdrawal of consent where processing is based on consent
-Requests should be sent to: bassman59@gmail.com
-Some information may need to be retained for security, legal, billing or audit reasons.
-12. Children
-eirGate is not intended for children. It is intended for authorised users of managed gate-access systems.
-13. Changes to this policy
-eirGate may update this Privacy Policy from time to time. The latest version will be made available at the privacy policy URL used in the app store listing.
-14. Contact
-Questions about this Privacy Policy should be sent to: bassman59@gmail.com</p>
+  <main>
+    <h2>1. Who we are</h2>
+    <p>eirGate provides cloud-managed gate access, gate administration, user management, call-to-open access, device monitoring and related security features for authorised users and administrators.</p>
+
+    <div class="contact-box">
+      <strong>Operator:</strong> eirGate<br>
+      <strong>Address:</strong> 31B Ballinteer Park, Ballinteer, Dublin 16, D16FT22, Ireland<br>
+      <strong>Email:</strong> <a href="mailto:bassman59@gmail.com">bassman59@gmail.com</a>
+    </div>
+
+    <h2>2. Information we collect</h2>
+    <p>eirGate may collect and process the following information:</p>
+    <ul>
+      <li><strong>Account and user information:</strong> name, email address where provided, mobile phone number, user role and permissions, company or gate assignment, and login credentials or authentication data.</li>
+      <li><strong>Gate access and event information:</strong> gate open commands, auxiliary relay commands, call-to-open attempts, access allowed or denied records, and the date, time, user and gate identity linked to access events.</li>
+      <li><strong>App and device security information:</strong> app install identifier, app device identifier, phone-binding status where enabled, login/session information, and security/audit events.</li>
+      <li><strong>Gate hardware information:</strong> gate device ID, SIM ICCID, modem IMEI, signal strength/RSSI, online/offline heartbeat status, MQTT connection status, GNSS location of the fixed gate device, input states, relay events, and ATECC608C secure module serial/status where fitted.</li>
+    </ul>
+    <p>eirGate does not use the mobile app to track a user’s live personal location. Any GNSS location stored by eirGate relates to the fixed gate hardware module, not the phone user.</p>
+
+    <h2>3. Why we use this information</h2>
+    <p>eirGate uses this information to:</p>
+    <ul>
+      <li>Authenticate users and manage authorised access.</li>
+      <li>Allow authorised users to open assigned gates.</li>
+      <li>Manage companies, gates, roles and permissions.</li>
+      <li>Record access and relay events for audit and security purposes.</li>
+      <li>Support call-to-open using recognised caller phone numbers.</li>
+      <li>Show gate online/offline, signal, input and diagnostic status.</li>
+      <li>Detect faults and support escalation where configured.</li>
+      <li>Improve security and prevent unauthorised access.</li>
+      <li>Provide technical support and comply with legal, billing, security and operational requirements.</li>
+    </ul>
+
+    <h2>4. Call-to-open and telephony</h2>
+    <p>Where call-to-open is enabled, a user may call an eirGate-assigned telephone number. eirGate receives the caller phone number, checks whether that phone number is authorised for the gate, triggers the configured relay if allowed, and rejects the call. The caller number and call result may be logged for security and audit purposes.</p>
+
+    <h2>5. Phone binding</h2>
+    <p>Phone binding may be disabled, monitored, or enforced by an administrator. When enabled, eirGate may link a user account to an app installation or device identifier to reduce unauthorised use of credentials on another phone.</p>
+
+    <h2>6. Secure module authentication</h2>
+    <p>Where supported hardware is installed, eirGate may record secure module details such as the ATECC608C serial number, module status and verification events. This is used to help confirm that a gate module is genuine and authorised.</p>
+
+    <h2>7. Sharing of information</h2>
+    <p>eirGate does not sell user data. eirGate may use trusted service providers to operate the service, including hosting, database, telephony, payment, email or support providers. These providers process information only as needed to provide the eirGate service.</p>
+    <p>Examples may include cloud hosting providers, database providers, Twilio for call-to-open, Stripe for billing/payment where used, and email/support providers where used.</p>
+    <p>eirGate may also disclose information where required by law, regulation, court order, security investigation, or to protect the rights and safety of users, companies or property.</p>
+
+    <h2>8. Security</h2>
+    <p>eirGate uses encrypted connections where available, including HTTPS/TLS between the app and backend services. Access to administrative functions is restricted by user role. Security logs may be retained to investigate misuse, faults or unauthorised access.</p>
+
+    <h2>9. Data retention</h2>
+    <p>eirGate keeps account, access and diagnostic records for as long as needed to provide the service, maintain security, support customers, comply with legal requirements and resolve disputes. Retention periods may vary depending on company policy, contract terms, security needs and legal obligations.</p>
+
+    <h2>10. User rights and deletion requests</h2>
+    <p>Depending on applicable law, users may request:</p>
+    <ul>
+      <li>Access to their personal data.</li>
+      <li>Correction of inaccurate information.</li>
+      <li>Deletion of personal data.</li>
+      <li>Restriction of, or objection to, processing.</li>
+      <li>A copy of their personal data.</li>
+      <li>Withdrawal of consent where processing is based on consent.</li>
+    </ul>
+    <p>Requests should be sent to <a href="mailto:bassman59@gmail.com">bassman59@gmail.com</a>. Some information may need to be retained for security, legal, billing or audit reasons.</p>
+
+    <h2>11. Children</h2>
+    <p>eirGate is not intended for children. It is intended for authorised users of managed gate-access systems.</p>
+
+    <h2>12. Changes to this policy</h2>
+    <p>eirGate may update this Privacy Policy from time to time. The latest version will be made available at the privacy policy URL used in the app store listing.</p>
+
+    <h2>13. Contact</h2>
+    <p>Questions about this Privacy Policy should be sent to <a href="mailto:bassman59@gmail.com">bassman59@gmail.com</a>.</p>
+  </main>
+
+  <footer>
+    &copy; 2026 eirGate. All rights reserved.
+  </footer>
 </body>
 </html>
